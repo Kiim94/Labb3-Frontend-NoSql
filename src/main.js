@@ -6,7 +6,7 @@ console.log("Script laddat!");
 //Hade denna vid test lokalt:
 /*const apiUrl = "http://localhost:3000/api/works";*/
 
-const apiUrl = "https://labb3-webbserver-nosql.onrender.com/api/works";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 //ul elementet på index.html
 const list = document.getElementById("work-list");
