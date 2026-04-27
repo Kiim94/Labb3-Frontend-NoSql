@@ -4,10 +4,10 @@ console.log("Script laddat!");
 
 //url till api-server. Ingen / på slutet. Kan bli konstigt
 //Hade denna vid test lokalt:
-const apiUrl = "http://localhost:3000/api/works";
-/*
-const apiUrl = "https://labb2-webserver.onrender.com/api/works";
-*/
+/*const apiUrl = "http://localhost:3000/api/works";*/
+
+const apiUrl = "https://labb3-webbserver-nosql.onrender.com/api/works";
+
 //ul elementet på index.html
 const list = document.getElementById("work-list");
 
