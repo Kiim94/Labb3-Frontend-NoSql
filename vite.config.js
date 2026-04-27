@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    base: '/labb3-front-server/',
+    base: '/Labb3-Frontend-NoSql/',
     build: {
     rollupOptions: {
       input: {
