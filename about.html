@@ -17,6 +17,10 @@
     </nav>
     <div id="center">
     <h1>Om uppgiften</h1>
+    <p>Denna uppgift har gått ut på att skapa en REST-webbtjänst med NoSQL och senare koppla detta till en webbplats som 
+      använder fetch för att hämta och konsumera webbtjänsten. Render har använts som hostingplattform
+      medan MongoDB Atlas har använts som databas-server för att lagra data i en NoSQL-databas.
+    </p>
     <p>Vad som använts:</p>
     <ul>
       <li>Express</li>
@@ -25,15 +29,37 @@
       <li>Mongoose</li>
       <li>NodeEnv</li>
       <li>Postman - för att kontrollera api</li>
+      <li>Vite (för frontend)</li>
     </ul>
     <h2>Vad jag lärt mig:</h2>
     <p>Till en början kändes det problematiskt - som alltid när något nytt ska läras in. Vad ska vart? Vad kan jag ändra på från föregående uppgift?</p>
-    <p>Själva Compass tyckte jag mycket om: det var lätt att lägga till nya objekt och få det att någorlunda fungera. Märk väl att inget avancerats har 
-      gjorts med Compass ännu, så jag kanske säger detta lite för tidigt.
+    <p>Själva Compass tyckte jag mycket om: det var lätt att lägga till nya dokument och få det att någorlunda fungera. Märk väl att inget avancerats har 
+      gjorts med Compass ännu, så jag kanske säger detta lite för tidigt. Men jag gillade att det inte är nödvändigt att lägga till id för varenda dokument
+      som ska läggas till i en collection.
     </p>
     <p>Det var knepigt att ändra innehållet från föregående uppgift. Lättaste där var att ta bort sådant som man gör normalt med SQL: skapade tabeller,
       kommandon som select, update och så vidare. Knepigare var det att få in ny lingo när man använder MongoDB.
     </p>
+    <h2>Att koppla in MongoDB</h2>
+    <p>Var lite knepigt innan det slutligen fungerade. Detta med att hämta och koppla MONGO_URI skapade stora problem i början, innan jag förstod att man behövde
+      skriva in sitt lösenord och användarnamn för den användare man skapat.</p>
+      <p>Att göra Schema med mongoose påminde om hur man gör interface i Typescript: det gjorde det lättare att förstå.</p>
+      <p>Största skillnaden från sql-databas från tidigare kurser verkar dels vara att det är lite mindre skrivande som behövdes med MongoDB + mongoose, och för min
+        del var det lite lättare att förstå MongoDB. Största hindret var egentligen att se till att det fungerade backend -> frontend samt GitHub -> MongoDB -> Render.
+         Ibland var det svårt att hitta vart man behövde gå för att få saker och ting att fungera.
+      </p>
+      <p>Jag har inte testat med mer än 10 dokument hittills, och har då gjort dem en och en. Det hade varit intressant att se hur det hade varit att lägga till
+        flera samtidigt (det fanns som alternativ), men hittills har jag mest testat för att se så att saker och ting fungerar. Det har helt enkelt inte blivit av,
+        men kan ju testa detta i framtiden.
+      </p>
+      <h2>NoSQL vs. SQL</h2>
+      <p>Största skillnaden jag upplevde mellan de båda var att NoSQL verkade "friare". Man <i>behöver</i> inte använda Schema när man kodar för MongoDB, men det underlättar
+        och gör datan mindre stökig. I SQL hade det varit ytterst svårt - om man inte valde att göra tabellernas innehåll väldigt "lösa" - att kunna lägga till vad som helst 
+        utan vidare.
+      </p>
+      <p>Det kan ju vara bra att vara frisläppt på detta vis, men det är tacksamt att använda mongoose för att skapa en viss ordning och reda på det hela.</p>
+       
+      </p>
     </div>
   </main>
     <script type="module" src="/src/main.js"></script>
