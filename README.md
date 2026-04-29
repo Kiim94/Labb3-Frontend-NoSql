@@ -12,3 +12,5 @@ Skillnader:
 - Ändrat styling
 - Ändrat variabel för URL som hämtar data
 - Ändrat när id hämtas: tidigare work.id, nu work._id pga mongoDB
+
+#### Länk till del 1, backend: https://github.com/Kiim94/Labb3-Webbserver-NoSql
