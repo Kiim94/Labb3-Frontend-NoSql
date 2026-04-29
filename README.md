@@ -13,4 +13,6 @@ Skillnader:
 - Ändrat variabel för URL som hämtar data
 - Ändrat när id hämtas: tidigare work.id, nu work._id pga mongoDB
 
+Största skillnaden är kanske egentligen att webbplatsen här är publicerad från GitHub till Netlify istället för direkt från GitHub.
+
 #### Länk till del 1, backend: https://github.com/Kiim94/Labb3-Webbserver-NoSql
